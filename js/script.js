@@ -2,11 +2,19 @@ var quotes = ["'Associate yourself with men of good quality if you esteem your o
 var presidentName = ["George Washington", "John Adams", "Thomas Jefferson", "James Madison", "James Monroe", "John Quincy Adams", "Andrew Jackson", "Martin Van Buren", "William Henry Harrison" , "John Tyler", "James Polk", "Zachary Taylor", "Millard Fillmore", "Franklin Pierce", "James Buchanan"];
 var yearsOfPresidency =["1789-1797", "1797-1801", "1801-1809", "1809-1817", "1817-1825", "1825-1829", "1829-1837", "1837-1841", "1841", "1841-1845", "1845-1849", "1849-1850", "1850-1853", "1853-1857", "1857-1861" ]; 
 
-$("#new-quote" ).click(function() {
+$(document).ready(function(){
   var randomNumber = Math.floor(Math.random() * 16);
   $(".quotation").html(quotes[randomNumber]);
   $(".name-of-president").html(presidentName[randomNumber]);
   $(".date-of-presidency").html(yearsOfPresidency[randomNumber]);
 });
+
+$("#new-quote" ).click(function() {
+  var clickedRandomNumber = Math.floor(Math.random() * 16);
+  $(".quotation").html(quotes[clickedRandomNumber]);
+  $(".name-of-president").html(presidentName[clickedRandomNumber]);
+  $(".date-of-presidency").html(yearsOfPresidency[clickedRandomNumber]);
+});
+
 
  
