@@ -7,6 +7,7 @@ $(document).ready(function(){
   $(".quotation").html(quotes[randomNumber]);
   $(".name-of-president").html(presidentName[randomNumber]);
   $(".date-of-presidency").html(yearsOfPresidency[randomNumber]);
+  $('#twitter-quote').attr('href', 'https://twitter.com/intent/tweet?text='+ quotes[randomNumber]);
 });
 
 $("#new-quote" ).click(function() {
@@ -14,6 +15,7 @@ $("#new-quote" ).click(function() {
   $(".quotation").html(quotes[clickedRandomNumber]);
   $(".name-of-president").html(presidentName[clickedRandomNumber]);
   $(".date-of-presidency").html(yearsOfPresidency[clickedRandomNumber]);
+  $('#twitter-quote').attr('href', 'https://twitter.com/intent/tweet?text='+ quotes[clickedRandomNumber]);
 });
 
 
