@@ -1,10 +1,24 @@
 body {
-  background-color: #CC0000;
+  /*background-color: #CC0000; */
+  background-image: url("http://4.bp.blogspot.com/-woaQVmVG-wA/UFR35ITLpNI/AAAAAAAAAQ4/GZGxuEWhp4o/s1600/american-flag-wallpaper.jpg");
 }
 
 .title {
   margin-top: 200px;
-  text-shadow: 1px 1px #1096C9;
-  color: #191B6D;
+  text-shadow: 2px 2px #191B6D;
+  color: #1096C9;
   font-family: 'Montserrat', sans-serif;
+}
+
+.quotation {
+  font-size: 20px;
+  font-family: 'Roboto Slab', serif;
+}
+
+.panel{
+  width: 60%;
+}
+
+.panel-body {    
+  width: 92%;
 }
