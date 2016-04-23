@@ -3,6 +3,8 @@ body {
 }
 
 .title {
+  margin-top: 200px;
+  text-shadow: 1px 1px #1096C9;
   color: #191B6D;
   font-family: 'Montserrat', sans-serif;
 }
