@@ -10,13 +10,20 @@ var presidentName = ["George Washington", "John Adams", "Thomas Jefferson", "Jam
 var yearsOfPresidency =["1789-1797", "1797-1801", "1801-1809", "1809-1817", "1817-1825", "1825-1829", "1829-1837", "1837-1841", "1841", "1841-1845", "1845-1849", "1849-1850", "1850-1853", "1853-1857", "1857-1861", "1861-1865", "1865-1869", "1885-1889, 1893-1897"];
 
 function selectInfo(){
-  var clickedRandomNumber = Math.floor(Math.random() * 18);
-  randomNumberArray.push(clickedRandomNumber);
-  if (randomNumberArray[randomNumberArray.length - 1] === 0 && randomNumberArray[randomNumberArray.length - 2] === randomNumberArray[randomNumberArray.length - 1]) {
-    clickedRandomNumber = 1;
-  } else if (randomNumberArray[randomNumberArray.length - 2] === randomNumberArray[randomNumberArray.length - 1] && randomNumberArray[randomNumberArray.length - 1] > 0){
-    clickedRandomNumber = 0;
+  if ( randomNumberArray[randomNumberArray.length - 1] === true){
+    var clickedRandomNumber = 1;
+  } else {
+    var value = false;
+    clickedRandomNumber = Math.floor(Math.random() * 18);
   }
+
+  randomNumberArray.push(clickedRandomNumber);
+  if (randomNumberArray[randomNumberArray.length - 2] === randomNumberArray[randomNumberArray.length - 1]){
+    clickedRandomNumber = 0;
+    value = true;
+    randomNumberArray.push(value);
+  }
+  // console.log(randomNumberArray);
   
   $(".quotation").html(quotes[clickedRandomNumber]);
   $(".name-of-president").html(presidentName[clickedRandomNumber]);
