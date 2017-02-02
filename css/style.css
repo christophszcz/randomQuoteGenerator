@@ -30,3 +30,11 @@ body {
 .panel-body {    
   width: 92%;
 }
+
+/* Media Queries */
+
+@media(min-width: 1366px){
+  body {
+    background-size: 100%;
+  }
+}
