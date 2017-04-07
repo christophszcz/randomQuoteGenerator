@@ -28,5 +28,10 @@ function selectInfo(){
   $(".quotation").html(quotes[clickedRandomNumber]);
   $(".name-of-president").html(presidentName[clickedRandomNumber]);
   $(".date-of-presidency").html(yearsOfPresidency[clickedRandomNumber]);
-  $('#twitter-quote').attr('href', 'https://twitter.com/intent/tweet?text='+ quotes[clickedRandomNumber]);
+  if( quotes[clickedRandomNumber].length > 115) {
+    var twitterQuote = '"'+ quotes[clickedRandomNumber].substring(1,115) + ' ...' + '"';
+  } else {
+    var twitterQuote = quotes[clickedRandomNumber];
+  }
+  $('#twitter-quote').attr('href', 'https://twitter.com/intent/tweet?text='+ twitterQuote + ' -'  + presidentName[clickedRandomNumber]);
 }

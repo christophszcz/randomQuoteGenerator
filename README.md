@@ -1,3 +1,3 @@
 ## U.S. President Random Quote Generator
 
-[http://codepen.io/cjszcz17/pen/dMjKPY](http://codepen.io/cjszcz17/pen/dMjKPY)
+[http://christophszcz.github.io/randomQuoteGenerator/](http://christophszcz.github.io/randomQuoteGenerator/)
